@@ -1,0 +1,38 @@
+body {
+    font: 16px Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+input {
+    width: 150px;
+    padding: 2px 5px;
+    line-height: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    border: 0 none;
+    padding: 0;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 14px;
+}
+
+button[type=submit]{
+    color: blue;
+    margin-left: 150px;
+}
