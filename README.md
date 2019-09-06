@@ -1,4 +1,4 @@
-**Sobre os Arquivos**
+# Sobre os Arquivos
 
 A pasta `produto-desconto/` contém os arquivos referentes ao exercício 1, com o cálculo de desconto de um produto.
 
