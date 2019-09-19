@@ -1,0 +1,26 @@
+pre {
+    max-height: 200px;
+    border: 1px inset;
+    padding: 20px;
+    margin-top: 2em;
+    background: #fff;
+}
+
+.jumbotron {
+    padding: 2em 1em;
+}
+
+.de, .por, .economize {
+    display: block;
+}
+
+.de {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.economize {
+    font-size: .8em;
+    color: #1c7430;
+    float: right;
+}
