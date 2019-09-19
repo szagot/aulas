@@ -139,7 +139,7 @@ if (isset($_GET['ordem'])) {
                         </td>
                         <td>
                             <input class="form-control"
-                                   type="desconto"
+                                   type="number"
                                    name="desconto[<?= $produto['sku'] ?>]"
                                    value="0"
                                    min="0"
