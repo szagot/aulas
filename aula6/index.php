@@ -7,10 +7,9 @@ $produtos = [
         'valor' => 2999.98,
     ],
     [
-        'sku'      => 'REF0002',
-        'nome'     => 'Motorola G7 Play',
-        'valor'    => 1509.8,
-        'desconto' => 0,
+        'sku'   => 'REF0002',
+        'nome'  => 'Motorola G7 Play',
+        'valor' => 1509.8,
     ],
     [
         'sku'   => 'REF0003',
@@ -70,10 +69,10 @@ if (isset($_GET['ordem'])) {
     <meta charset="UTF-8">
     <title>Produtos</title>
 
-    <!-- Bootstrap é um Frameword de CSS que auxilia nas principais funções -->
+    <!-- Bootstrap é um Framework de CSS que auxilia nas principais funções -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- Fontawesome é um Frameword de CSS para ícones -->
+    <!-- Fontawesome é um Framework de CSS para ícones -->
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/brands.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/solid.min.css">
@@ -99,20 +98,20 @@ if (isset($_GET['ordem'])) {
 
     <div class="container">
 
-        <form class="form-group" method="post" action="desconto.php">
+        <form class="form-group" method="post" action="desconto-solucao.php">
             <table class="table table-striped">
                 <thead>
                 <tr class="thead-dark">
                     <th scope="col">
-                        <?= (($_GET['ordem'] ?? '') == 'sku') ? '<i class="fas fa-sort-down"></i>' : '' ?>
+                        <?= ($_GET['ordem'] == 'sku') ? '<i class="fas fa-sort-down"></i>' : '' ?>
                         <a class="text-white" href="/">SKU</a>
                     </th>
                     <th scope="col">
-                        <?= (($_GET['ordem'] ?? '') == 'nome') ? '<i class="fas fa-sort-down"></i>' : '' ?>
+                        <?= ($_GET['ordem'] == 'nome') ? '<i class="fas fa-sort-down"></i>' : '' ?>
                         <a class="text-white" href="/?ordem=nome">Nome</a>
                     </th>
                     <th scope="col">
-                        <?= (($_GET['ordem'] ?? '') == 'valor') ? '<i class="fas fa-sort-down"></i>' : '' ?>
+                        <?= ($_GET['ordem'] == 'valor') ? '<i class="fas fa-sort-down"></i>' : '' ?>
                         <a class="text-white" href="/?ordem=valor">Valor</a>
                     </th>
                     <th scope="col">Desconto (%)</th>
