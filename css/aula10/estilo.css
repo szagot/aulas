@@ -8,45 +8,61 @@ body {
     padding: 20px;
 }
 
-div {
-    border: 1px solid #666;
-    margin: 20px;
-    min-width: 10px;
-    min-height: 10px;
-}
-
 .container {
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
-    border: 0 none;
 }
 
-.left, .right {
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.left {
     float: left;
-    width: 200px;
-    height: 100px;
-    margin: 0 20px;
+    width: 100px;
+    height: 620px;
 }
 
 .right {
     float: right;
-}
-
-.responsive {
-    margin-left: 240px;
-    height: 500px;
-}
-
-#header .responsive {
-    margin-right: 240px;
+    width: 200px;
     height: 100px;
 }
 
-#body .left {
+.container > .responsive {
+    margin-left: 120px;
+}
+
+#header .responsive {
+    margin-right: 220px;
+    height: 100px;
+}
+
+.responsive.green {
+    margin-top: 20px;
     height: 500px;
 }
 
-#header, #body {
-    border: 0 none;
-    margin: 0;
+.btn {
+    position: fixed;
+    bottom: 0;
+    right: 200px;
+    width: 100px;
+    height: 30px;
 }
